@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+	<h1>List page</h1>
+	<hr>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>번호</th>
+				<th>아이디</th>
+				<th>비밀번호</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="list : ${list}">
+				<td><a th:href="@{detail(uno=${list.uno})}">[[${list.uno}]]</a></td>
+				<td>[[${list.id}]]</td>
+				<td>[[${list.pw}]]</td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

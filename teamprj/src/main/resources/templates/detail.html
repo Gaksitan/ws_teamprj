@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>detail page</h1>
+<hr>
+<table border="1">
+	<tr>
+		<th>Uno번호</th><th>아이디</th><th>패스워드</th>
+	</tr>
+	<tr>
+	<td>[[${list.uno}]]</td><td>[[${list.id}]]</td><td>[[${list.pw}]]</td>
+	</tr>
+</table>
+<a href="@{delete(bno=${list.uno})}">삭제</a>
+<a href="list">목록보기</a>
+</body>
+</html>
