@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.example.teamprj.dao.IUserdao">
+<mapper namespace="com.example.teamprj.dao.IUserDao">
   <select id="getUserList" resultType="com.example.teamprj.dto.User">
     SELECT * FROM tbl_user
   </select>
